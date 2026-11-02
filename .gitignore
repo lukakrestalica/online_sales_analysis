@@ -1,0 +1,10 @@
+# Local configuration and documentation screenshots
+config.json
+*.png
+*.jpg
+*.jpeg
+
+# Python runtime files
+__pycache__/
+*.py[cod]
+.venv/
