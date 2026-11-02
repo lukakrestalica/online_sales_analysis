@@ -25,3 +25,11 @@ class ProductManager:
 
     def display_total_value(self):
         print(f"Ukupna vrednost inventara: {self.total_value():.2f} EUR")
+
+    def remove_product(self, name):
+        """Uklanja proizvod po nazivu; vraca True ako je pronadjen."""
+        for product in self.products:
+            if product.name.casefold() == name.strip().casefold():
+                self.products.remove(product)
+                return True
+        return False
